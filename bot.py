@@ -14,7 +14,7 @@ filters_collection = db["filters"]
 users_collection = db["users"]
 
 # Set your owner Telegram ID (only the owner can use certain commands)
-OWNER_ID = 6136203777  # Replace with your actual Telegram user ID
+OWNER_ID = 7763229951  # Replace with your actual Telegram user ID
 
 # Configure logging
 logging.basicConfig(
@@ -36,19 +36,19 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     # Use the requested link scheme for the user mention:
     mention = f'<a href="tg://openmessage?user_id={user.id}">{user.full_name}</a>'
     caption = (
-        f"𝖧i {mention}, 𝖭𝗂𝖼𝖾 𝗍𝗈 𝗆𝖾𝖾𝗍 𝗒𝗈𝗎 🙌\n"
+        f"𝖧i {mention}, 𝖭𝗂𝖼𝖾 𝗍𝗈 𝗆𝖾𝖾𝗍 𝗒𝗈𝗎 ..!!\n"
         "I ᴀᴍ ᴀ ᴄᴜsᴛᴏᴍ ʙᴏᴛ ᴍᴀᴅᴇ ғᴏʀ ᴛᴇᴀᴍ ACXᴀɴɪᴍᴇ...\n"
         'Bʏ <a href="https://t.me/ACX_NETWORK">ACX Nᴇᴛᴡᴏʀᴋ [🇮🇳]</a>'
     )
     
     # Inline buttons arranged in three rows:
     buttons = [
-        [InlineKeyboardButton("Lᴇᴛ's Rᴏʟʟ Bᴀʙʏ", url="http://t.me/GFilterBotRobot?startgroup=botstart")],
+        [InlineKeyboardButton("➕️ Lᴇᴛ's Rᴏʟʟ Bᴀʙʏ ➕️", url="http://t.me/GFilterRobot?startgroup=botstart")],
         [
             InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ", url="https://t.me/ACX_DISCUSSION"),
             InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ", url="https://t.me/ACX_NETWORK")
         ],
-        [InlineKeyboardButton("Oᴡɴᴇʀ", url="https://t.me/THEHYPER_ACX")]
+        [InlineKeyboardButton("Oᴡɴᴇʀ ✉️", url="https://t.me/THEHYPER_ACX")]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
     
@@ -166,7 +166,7 @@ async def reply_to_keyword(update: Update, context: ContextTypes.DEFAULT_TYPE) -
         if filter_doc["keyword"] in message_text:
             # Hyperlink the text using HTML formatting
             reply_text = f'<a href="{filter_doc["link"]}">{filter_doc["text"]}</a>'
-            button = InlineKeyboardButton("🔰 Wᴀᴛᴄʜ Nᴏᴡ 🔰", url=filter_doc["link"])
+            button = InlineKeyboardButton("🔰 𝗪𝗮𝘁𝗰𝗵 𝗡𝗼𝘄 🔰", url=filter_doc["link"])
             reply_markup = InlineKeyboardMarkup([[button]])
             await update.message.reply_text(
                 reply_text,
