@@ -1,6 +1,7 @@
 # ACX-G-FILTER-BOT
 # Join telegram channel 
-# Main- @ACX_NETWORK 
-# Support- @ACX_DISCUSSION 
-#Creator- @THEHYPER_ACX 
-https://files.catbox.moe/1c25gl.jpg
+# Main- https://t.me/ACX_NETWORK 
+# Support- https://t.me/ACX_DISCUSSION
+#Creator- https://t.me/THEHYPER_ACX 
+
+ 
