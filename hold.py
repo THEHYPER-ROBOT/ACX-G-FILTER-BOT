@@ -1,7 +1,7 @@
 import requests
 import time
 
-url = "https://net-delia-originalsrijan69-10e42d45.koyeb.app/"
+url = "https://applicable-berry-acxgfilterbot-555232d0.koyeb.app/"
 
 while True:
     try:
